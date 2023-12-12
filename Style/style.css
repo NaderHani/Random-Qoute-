@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Alegreya';
+    src: url(../font/Alegreya-VariableFont_wght.ttf);
+}
+.home {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.535),rgba(0, 0, 0, 0.512)),url(../img/back-img.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.home .container{
+    box-shadow: 0 0 200px -69px #000;
+}
+.home h1 {
+    color:#fff;
+    font-weight: 600;
+    font-family:'Alegreya' ;
+    font-size: 4.25rem;
+}
+#quoteCards{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.home button{
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+    transition: 1s;
+    padding: 10px 30px;
+}
+.home button:hover{
+    background-color: #00000075;
+    color: #fff;
+    border-color: #fff;
+}
