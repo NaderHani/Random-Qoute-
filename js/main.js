@@ -29,31 +29,8 @@ var contaner = [`<div class="text-center w-50 m-auto active">
         <p class="text-white py-3">Do not take life too seriously. You will not get out alive.</p>
         <span class="text-white-50">Elbert Hubbard</span>
         </div>` ];
-
 function contanerQount(){
-    for(var i=0 ;i<contaner.length; i++)
-    {
-        var random = Math.round(Math.random()*10);
-        if(random<=2){
-            document.getElementById('quoteCards').innerHTML=contaner.at(0);
-        } 
-        else if (random>2 && random <4){
-            document.getElementById('quoteCards').innerHTML=contaner.at(1);
-        }
-        else if(random>=4 && random <6){
-            document.getElementById('quoteCards').innerHTML=contaner.at(2);
-        }
-        else if(random>=6 && random <8){
-            document.getElementById('quoteCards').innerHTML=contaner.at(3);
-        }
-        else if(random>=8 && random <10){
-            document.getElementById('quoteCards').innerHTML=contaner.at(4);
-        }
-        else{
-            document.getElementById('quoteCards').innerHTML=contaner.at(5); 
-        }
-    }
-    console.log(random);
+    var random = Math.floor(Math.random()*contaner.length);
+    document.getElementById('quoteCards').innerHTML=contaner[random];
 }
-
 
